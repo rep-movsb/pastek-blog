@@ -1,9 +1,25 @@
 .sidebar {
-	z-index: -1;
+	z-index: 1;
 	position: fixed;
 	top: 0;
 	left: 0;
 	width: 70px;
 	height: 100%;
 	background-color: #CCC;
+}
+
+.sidebar li {
+	display: block;
+	width: 70px;
+	height: 100%;
+}
+
+.sidebar li > ul {
+	display: block;
+	padding: 6px;
+	margin: 0;
+}
+
+.sidebar li > ul:hover {
+	background-color: #FFF;
 }

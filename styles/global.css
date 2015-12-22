@@ -4,6 +4,9 @@ body {
 }
 
 body > .content {
+	position: relative;
+	top: 0;
+	left: 0;
 	z-index: 2;
 	margin-left: 70px;
 	display: inline-block;
