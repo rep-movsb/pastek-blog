@@ -1,10 +1,9 @@
 .page {
-	width: 700px;
-	/*height: 100%;*/
+	width: 800px;
+	min-height: 100%;
 	float: left;
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 	border-left: solid 0px #777;
-	padding-bottom: 30px;
 	background-color: #FFF;
 }
 
@@ -13,9 +12,12 @@
 }
 
 .page > * {
-	padding: 0 50px;
+	padding: 0 70px;
 }
 
 .page > h1 {
 	width: 70%;
+	color: #444;
+	font-weight: normal;
+	margin-top: 10px;
 }
