@@ -1,0 +1,21 @@
+.page {
+	width: 700px;
+	/*height: 100%;*/
+	float: left;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	border-left: solid 0px #777;
+	padding-bottom: 30px;
+	background-color: #FFF;
+}
+
+.page:first-child-of-type {
+	border-left: none;
+}
+
+.page > * {
+	padding: 0 50px;
+}
+
+.page > h1 {
+	width: 70%;
+}
