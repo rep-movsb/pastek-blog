@@ -13,11 +13,111 @@
 				box-shadow: 0 0 20px -4px #777;
 				background-color: #FFF;
 			}
+			.page .header {
+				position: fixed;
+				top: 0;
+				width: 1400px;
+				height: 60px;
+				background-color: #444;
+				color: #FFF;
+				font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+			}
+			.page .content {
+				margin: 0 auto;
+				width: 80%;
+			}
+			.page .header a {
+				text-decoration: none;
+				color: #FFF;
+			}
+			.page .header a:hover {
+				color: #EEE;
+			}
+			.page .header li {
+				display: block;
+				margin: 0;
+				height: 100%;
+			}
+			.page .header li ul {
+				display: inline-block;
+				margin: 0;
+				padding: 0 20px;
+				height: 100%;
+				vertical-align: middle;
+				text-align: center;
+				text-transform: lowercase;
+				line-height: 60px;
+			}
+			.page .header li ul.logo {
+				background-color: #508;
+				padding: 0 40px;
+				margin-left: -40px;
+				text-transform: none;
+				font-weight: bold;
+				font-size: 2em;
+			}
+			.page .main {
+				padding-top: 60px;
+				background-color: #FFF;
+				/*background: radial-gradient(#AAA, #777);
+				color: #FFF;*/
+				height: 900px;
+				font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+			}
+			.page .footer {
+				background-color: #FFF;
+				border-top: solid 5px #508;
+				font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+			}
+			.page .footer .copyright {
+				padding: 20px 0;
+				background-color: #444;
+				color: #FFF;
+				font-size: 0.8em;
+			}
 		</style>
 	</head>
 	<body>
 		<div class="page">
-			
+			<div class="header">
+				<div class="content">
+					<li>
+						<a href="#">
+							<ul class="logo">
+								Disruptive.
+							</ul>
+						</a>
+						<a href="#">
+							<ul>
+								Home
+							</ul>
+						</a>
+						<a href="#">
+							<ul>
+								Solutions
+							</ul>
+						</a>
+						<a href="#">
+							<ul>
+								About
+							</ul>
+						</a>
+					</li>
+				</div>
+			</div>
+			<div class="main">
+				<div class="content" style="text-align: center;">
+					<h1 style="font-weight: normal; font-size: 6em">Meet the future now.</h1>
+					<h2 style="font-weight: normal; font-size: 4em">Native technologies.<br />Efficient systems.</h2>
+				</div>
+			</div>
+			<div class="footer">
+				<div class="copyright">
+					<div class="content">
+						Copyright (c) 2015 Disruptive Systems, inc. All rights reserved.
+					</div>
+				</div>
+			</div>
 		</div>
 	</body>
 </html>
