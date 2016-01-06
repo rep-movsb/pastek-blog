@@ -2,6 +2,9 @@
 	<head>
 		<title>Disruptive Systems</title>
 		<style type="text/css">
+			a {
+				text-decoration: none;
+			}
 			body {
 				margin: 0;
 				background-color: #FFF;
@@ -10,7 +13,7 @@
 				max-width: 1400px;
 				min-height: 100%;
 				margin: 0 auto;
-				box-shadow: 0 0 20px -6px #777;
+				/*box-shadow: 0 0 20px -6px #777;*/
 				background-color: #FFF;
 			}
 			.page .header {
@@ -60,19 +63,37 @@
 			.page .main {
 				padding-top: 60px;
 				background-color: #FFF;
-				background: radial-gradient(#FFF, #DDD);
+				background: radial-gradient(#FFF, #FFF, #DDD);
 				/*color: #FFF;*/
 				height: 900px;
 				font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 			}
 			.page .footer {
 				background-color: #FFF;
+				color: #000;
 				border-top: solid 5px #508;
 				font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 			}
-			.page .footer .copyright {
+			.page .footer .sitemap {
 				padding: 20px 0;
 				background-color: #444;
+				color: #EEE;
+				line-height: 30px;
+				font-size: small;
+			}
+			.page .footer .sitemap a {
+				display: block;
+				color: #EEE;
+			}
+			.page .footer .sitemap .category {
+				margin: 10px 0;
+				color: #A6B;
+				text-transform: uppercase;
+				font-size: initial;
+			}
+			.page .footer .copyright {
+				padding: 15px 0;
+				background-color: #333;
 				color: #FFF;
 				font-size: 0.8em;
 			}
@@ -116,6 +137,13 @@
 				</div>
 			</div>
 			<div class="footer">
+				<div class="sitemap">
+					<div class="content">
+						<a class="category" href="#">Solutions</a>
+						<a href="#">Native System One</a>
+						<a href="#">High-performance computing</a>
+					</div>
+				</div>
 				<div class="copyright">
 					<div class="content">
 						Copyright (c) 2015 Disruptive Systems, inc. All rights reserved.
