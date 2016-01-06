@@ -1,5 +1,5 @@
 .page {
-	width: 800px;
+	width: 600px;
 	min-height: 100%;
 	float: left;
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -20,4 +20,9 @@
 	color: #444;
 	font-weight: normal;
 	margin-top: 10px;
+}
+
+.page > img {
+	width: 100%;
+	padding: 0;
 }

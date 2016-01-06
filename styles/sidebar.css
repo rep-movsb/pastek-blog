@@ -18,6 +18,11 @@
 	display: block;
 	padding: 6px;
 	margin: 0;
+	border-top: solid 2px #DDD;
+}
+
+.sidebar li > ul:first-child {
+	border-top: none;
 }
 
 .sidebar li > ul:hover {
