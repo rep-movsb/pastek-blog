@@ -7,14 +7,13 @@
 			}
 			body {
 				margin: 0;
-				background-color: #FFF;
+				background-color: #DDD;
 			}
 			.page {
 				max-width: 1400px;
 				min-height: 100%;
 				margin: 0 auto;
-				/*box-shadow: 0 0 20px -6px #777;*/
-				background-color: #FFF;
+				/*box-shadow: 0 0 14px -6px #777;*/
 			}
 			.page .header {
 				position: fixed;
@@ -33,9 +32,10 @@
 			.page .header a {
 				text-decoration: none;
 				color: #FFF;
+				transition: color 0.3s;
 			}
 			.page .header a:hover {
-				color: #EEE;
+				color: #DDD;
 			}
 			.page .header li {
 				display: block;
@@ -52,6 +52,23 @@
 				text-transform: lowercase;
 				line-height: 60px;
 			}
+            .page .header li a ul.menu1 {
+                padding: 0 8px 0 12px;
+            }
+            .page .header li a ul.menu1::after {
+                content: '';
+                opacity: 0;
+                border-left: solid 10px transparent;
+                border-right: solid 10px transparent;
+                border-bottom: solid 10px white;
+                position: relative;
+                top: -50px;
+                z-index: 10;
+                transition: all 0.3s;
+            }
+            .page .header li a:hover ul.menu1::after {
+                opacity: 1;
+            }
 			.page .header li ul.logo {
 				background-color: #508;
 				padding: 0 40px;
@@ -60,12 +77,32 @@
 				font-weight: bold;
 				font-size: 2em;
 			}
+			.page .header li ul.contactus {
+				font-variant: small-caps;
+			}
+            .page .header li span.searchspan {
+                padding: 17px 10px;
+            }
+            .page .header li span.searchspan .searchbox {
+                padding: 6px 14px;
+                background-color: transparent;
+                border: solid 1px #777;
+                border-radius: 24px;
+                color: #DDD;
+                outline: none;
+                transition: all 0.3s;
+            }
+            .page .header li span.searchspan .searchbox:focus {
+                background-color: #DDD;
+                color: #000;
+            }
 			.page .main {
 				padding-top: 60px;
 				background-color: #FFF;
 				background: radial-gradient(#FFF, #FFF, #DDD);
-				/*color: #FFF;*/
-				height: 900px;
+                background: url(https://d1fto35gcfffzn.cloudfront.net/images/home/bg-cloud-native-hero.jpg);
+				color: #FFF;
+				height: 700px;
 				font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 			}
 			.page .footer {
@@ -104,6 +141,14 @@
 			<div class="header">
 				<div class="content">
 					<li>
+						<a style="float: right;" href="#">
+							<ul class="contactus">
+								Contact us
+							</ul>
+						</a>
+                        <span style="float: right" class="searchspan">
+                            <input type="text" class="searchbox" placeholder="search ..." />
+                        </span>
 						<a href="#">
 							<ul class="logo">
 								Disruptive.
@@ -115,7 +160,7 @@
 							</ul>
 						</a>
 						<a href="#">
-							<ul>
+							<ul class="menu">
 								Solutions
 							</ul>
 						</a>
@@ -129,7 +174,7 @@
 			</div>
 			<div class="main">
 				<div class="content" style="text-align: center;">
-					<h1 style="font-weight: normal; font-size: 6em; color: #777">Meet the future now.</h1>
+					<h1 style="font-weight: normal; font-size: 6em; color: #EEE">Meet the future.<br />Now.</h1>
 					<h2 style="font-weight: normal; font-size: 4em;">Native technologies.<br />Efficient systems.</h2>
 					<p style="text-align: left;">
 						Introducing Native System One.
